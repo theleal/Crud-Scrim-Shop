@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.background{
+  width: 1920px;
+  height: 961px;
+  
+  background-image: url('https://images.pexels.com/photos/14082361/pexels-photo-14082361.png');
+  background-size: cover;
+
+}
+
+.app--container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  
+  
+}
+
+.register--container {
+  padding: 24px 30px;
+  width: 300px;
+  height: 375px;
+  
+  margin-top: 70px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  background: #272a37;
+  text-align: center;
+  
+  box-shadow: 3px 5px 15px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid #a86246;
+
+}
+
+.register--title {
+  margin-bottom: 20px;
+}
+
+.register--input {
+  display: flex;
+  margin: 12px auto;
+  border-radius: 20px;
+  background-color:#323644 ;
+  border: 0px solid transparent;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: center;
+  font-family:Roboto;
+  font-weight: 300;
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+
+  
+}
+
+
+/* 
+input[type=text]:focus {
+  border: 5px solid #a86246;
+
+} */
+
+.register--button {
+  margin-top: 15px;
+  width: 270px;
+  height: 50px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  background-color: #a86246;
+  border: #a86246;
+  color: white;
+  font-weight: 700;
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 2px;
+
+}
+
+#titulo{
+  font-family: Poppins;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  background: #272a37;
+
+}

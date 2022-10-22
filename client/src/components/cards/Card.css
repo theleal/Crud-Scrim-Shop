@@ -1,0 +1,90 @@
+.card--container {
+    width: 400px;
+
+    border: 1px solid #a86246;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background: #272a37;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    padding: 16px;
+
+
+
+}
+
+.card-id {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: bla ck;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    padding: 3px;
+    font-family: monospace;
+
+    align-items: flex-end;
+}
+
+.card--title {
+    font-family: Poppins;
+    font-weight: 600;
+    color: white;
+    
+
+}
+
+.card--cost {
+    background-color: #1b1d24;
+    width: 80px;
+    height: max-content;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.card--category {
+    background-color: #1b1d24;
+    width: 80px;
+    height: max-content;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+
+.card--container:hover {
+    background-color: #323644;
+}
+
+.comprar {
+    margin-top: 15px;
+    flex-basis: 100%;
+    height: 50px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    background-color: #a86246;
+    border: #a86246;
+    color: white;
+    font-weight: 700;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+}
