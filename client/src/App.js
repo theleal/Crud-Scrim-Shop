@@ -70,8 +70,9 @@ function App() {
           <button className="register--button"
             onClick={() => handleClickButton()} >CADASTRAR</button>
         </div>
+        
 
-      {typeof listGames !== "undefined" && listGames.map((value) => {
+      {!!listGames && listGames.map((value) => {
         return (
         <Card
           key={value.id}

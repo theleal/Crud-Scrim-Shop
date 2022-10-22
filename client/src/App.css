@@ -6,11 +6,12 @@
 }
 
 .background{
-  width: 1920px;
-  height: 961px;
+  width: 100vw;
+  height: 100vh;
   
-  background-image: url('https://images.pexels.com/photos/14082361/pexels-photo-14082361.png');
-  background-size: cover;
+  /* background-image: url('https://images.pexels.com/photos/14082361/pexels-photo-14082361.png'); */
+  background-color: #1f2d39fe;
+
 
 }
 
@@ -33,7 +34,7 @@
   background: #272a37;
   text-align: center;
   
-  box-shadow: 3px 5px 15px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 15px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #a86246;
 
 }
@@ -58,16 +59,19 @@
   width: 250px;
   height: 30px;
   font-size: 14px;
+  color: white;
+
+  outline: 0px;
 
   
 }
 
 
-/* 
-input[type=text]:focus {
-  border: 5px solid #a86246;
 
-} */
+input[type=text]:focus {
+  outline: 1px solid #a86246;
+
+}
 
 .register--button {
   margin-top: 15px;
