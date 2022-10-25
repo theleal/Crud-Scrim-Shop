@@ -61,5 +61,5 @@ app.delete("/delete/:id", (req, res) => {
 });
 
 app.listen(3001, () => {
-    console.log("rodando servidor");
+    console.log("Rodando servidor");
 });
