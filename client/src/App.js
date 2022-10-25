@@ -36,7 +36,7 @@ function App() {
     Axios.get("http://localhost:3001/getCards").then((response) => {
       setListGames(response.data);
     });
-  }, []);
+  }, [listGames]);
 
   return (
 
@@ -72,7 +72,8 @@ function App() {
         </div>
         
 
-      {!!listGames && listGames.map((value) => {
+      {
+        typeof listGames !== "undefined" && listGames.map((value) => {
         return (
         <Card
           key={value.id}

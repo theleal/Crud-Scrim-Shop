@@ -24,7 +24,7 @@ export default function FormDialog(props) {
             cost: editValues.cost,
             category: editValues.category
         });
-
+            
         handleClose();
     };
 
@@ -32,7 +32,7 @@ export default function FormDialog(props) {
         Axios.delete(`http://localhost:3001/delete/${editValues.id}`);
         handleClose();
     };
-
+    
     const handleClickOpen = () => {
         props.setOpen(true);
     };
