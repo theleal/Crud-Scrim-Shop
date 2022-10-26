@@ -17,20 +17,32 @@ export default function FormDialog(props) {
         category: props.category
     });
 
-    const handleEditGame = () => {
+    const handleEditGame = (event) => {
+        event.preventDefault();
+
         Axios.put("http://localhost:3001/edit", {
             id: editValues.id,
             name: editValues.name,
             cost: editValues.cost,
             category: editValues.category
+        }).then(result => {
+            
+            props.updateCards();
+            handleClose();
+        }).catch(error => {
+            console.log(error);
         });
             
-        handleClose();
     };
 
     const handleDeleteGame = () => {
-        Axios.delete(`http://localhost:3001/delete/${editValues.id}`);
-        handleClose();
+        Axios.delete(`http://localhost:3001/delete/${editValues.id}`).then(result =>{
+            
+            props.updateCards();
+            handleClose();
+        }).catch(error => {
+            console.log(error);
+        });
     };
     
     const handleClickOpen = () => {
@@ -95,7 +107,7 @@ export default function FormDialog(props) {
                         <Button onClick={handleDeleteGame} color="primary">
                             Excluir
                         </Button>
-                        <Button onClick={handleEditGame} color="primary">
+                        <Button onClick={(e) => handleEditGame(e)} color="primary">
                             Salvar
                         </Button>
                     </DialogActions>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import './App.css';
 import Axios from "axios"
 import Card from "./components/cards/Card";
@@ -32,11 +32,17 @@ function App() {
     });
   };
 
-  useEffect(() => {
-    Axios.get("http://localhost:3001/getCards").then((response) => {
+  const getListGames = useCallback(() => {
+    Axios
+    .get("http://localhost:3001/getCards")
+    .then((response) => {
       setListGames(response.data);
     });
-  }, [listGames]);
+  });
+
+  useEffect(() => {
+    getListGames();
+  }, []);
 
   return (
 
@@ -83,6 +89,7 @@ function App() {
           name={value.name}
           cost={value.cost}
           category={value.category}
+          updateCards={getListGames}
           ></Card> 
         );
       })}

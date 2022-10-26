@@ -20,6 +20,7 @@ export default function Card(props) {
             listCard={props.listCard}
             setListCard={props.setListCard}
             id={props.id}
+            updateCards={props.updateCards}
             />
                 <div className="card--container" onClick={() => handleClickCard()}>
 
